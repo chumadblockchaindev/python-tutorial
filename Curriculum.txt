@@ -1,0 +1,75 @@
+Week 1: Installation and Setup and Installation of Extensions. Setup Vs Code for Python
+Introduction to python programming; 
+Basic Python Programming Concepts(print statement, variables, assignment and maths operators)
+
+Week 2: 
+
+Basic Data Types: Delve into the core data types in Python, the foundation of Django, 
+including integers, floats, strings, booleans, and more, to enhance your coding efficiency.
+
+Week 3:
+
+Basic Syntax and Control Flow: Get familiar with Django's syntax and control flow statements, 
+including loops, conditionals, and functions, to write clean and efficient code.
+
+Week 4:
+
+Basic Data Structures: Explore the fundamental data structures used in Django, 
+such as lists and tuples, to efficiently manage data in your projects.
+
+
+Week 5:
+
+Basic Data Structures: Explore the fundamental more complex data structures used in Django, 
+such as dictionaries, sets, manipulating data structures. Solve examples relating to data structure
+
+Week 6: 
+
+Decorators, Python Questions and Solutions & Python Drill
+
+Week 7:
+
+Exceptions: Gain a deeper understanding of Python's exception handling mechanism, 
+learning how to raise, catch, and define custom exceptions to improve your application's reliability.
+
+Week 8:
+
+Object-Oriented Programming (OOP): Master the principles of OOP in Django, 
+understanding classes, objects, inheritance to build scalable applications.
+
+Week 9:
+
+Object-Oriented Programming (OOP): Master more OOP principles such as polymorphism.  More examples and hands on practice on OOP
+
+Week 10:
+
+Files and File I/O: Discover how to work with files in Django, 
+mastering reading from and writing to files to store and retrieve data as needed.
+
+Week 11:
+
+Introduction to DJANGO, Installation, Setup etc...
+Database Operations: Understand how to perform CRUD operations (Create, Read, Update, Delete) 
+on databases in Django, leveraging models and queries to interact with your database efficiently.
+
+Week 12:
+
+More DJANGO Practice and Error Handling: Learn how to effectively handle errors and exceptions in Django, 
+implementing try-except blocks to create robust applications that can gracefully manage unexpected situations.
+
+
+
+Class Projects:
+Python Guessing App
+Todo app
+Book Shelf webapp
+Movie webapp
+Ecommerce Website
+Employee Management System
+Courier Website
+Investment Website
+Student Management System
+Online Banking Website
+Hotel Booking System
+Face Login System
+Quiz App

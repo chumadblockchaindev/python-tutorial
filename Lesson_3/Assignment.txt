@@ -1,0 +1,42 @@
+Precious
+
+for attempt in range (3):
+    x = input("attempted one time!")
+    y = input("attempted two times, one attempt left")
+    n = input("sim lock")
+    if x == correct_pin:
+        print(x)
+        break
+    else:
+        print(y)
+        if range == 2:
+            print(n)
+
+
+            
+Solomon
+
+correct_password = "pythonclassgn"
+
+
+max_attempts = 3
+
+for attempts in range(max_attempts):
+
+    entered_password = input("Enter your password: ")
+
+    if entered_password == correct_password:
+        print("Successful!")
+        break
+    else:
+
+        remaining_attempts = max_attempts - attempts - 1
+
+        if remaining_attempts > 0:
+            print(f"Wrong password. {remaining_attempts} tries remaining.")
+        else:
+            print("Locked the user out.")
+            break
+
+    
+

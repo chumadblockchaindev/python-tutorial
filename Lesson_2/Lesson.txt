@@ -1,0 +1,2 @@
+Install pylint
+python -m pip install -U pylint

@@ -1,0 +1,38 @@
+# For else Loop
+# For else state is different from the normal for loop
+# because it has an else statement that executes when the loop has finished 
+# iterating and there is no exit out of the loop 
+
+successful = False
+for number in range(3):
+    print("Attempt")
+    if successful:
+        print("Successful")
+        break
+else:            
+    print("Attempted three times and failed")
+
+# Nested Loop
+# In nested loops the outer loops run first and the inner loop
+# iterates out before control moves over the to the outer loop and it continues like that
+# until the outer loop finish executing
+for x in range(5):
+    for y in range(3):
+        print(f"({x}, {y})")
+
+# Infinite Loop
+
+# Infinite loops would continue to run as long as a condition is true
+
+# while True:
+#     command = input("> ")
+#     print("ECHO",  command)
+#     if command.lower() == "quit":
+#         break
+
+# Be aware of infinte loops because they run forever so have a way
+# to jump out of them and this can cause lots of problem because
+# if your program consumes lots of memory, it can run out of memory and crash
+
+
+
