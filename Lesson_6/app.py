@@ -4,12 +4,16 @@
 # List
 
 numbers = [1, 2, 3, 4]
-letters = ["a", "b", "c", "d", "e", "f", "g"]
+# letters = ["a", "b", "c", "d", "e", "f", "g"]
 numbers_and_letters = [1, 2, "a", "b", 4, "z"]
 list_of_tuples = [("a", "b"), ("c", "d")]
 list_of_dictionaries = [{id: 2, "name": "Ade"}, {id: 3, "name": "Efe"}]
+matrix = [[2, 3], [4, 5]]
+message = list("Hello World")
+zeros = [0] * 5
+
 # Accessing index of Lists
-# print(numbers[-1])
+# print(numbers[0:3])
 # print(numbers_and_letters[0:3])
 # print(numbers_and_letters[2:])
 # print(list_of_tuples)
@@ -22,7 +26,15 @@ list_of_dictionaries = [{id: 2, "name": "Ade"}, {id: 3, "name": "Efe"}]
 # letters.append("h")
 # print(letters)
 
+# Removing from list
 # letters.pop(4)
+# print(letters)
+
+# del letters[0:3]
+
+# print(letters)
+
+# letters.clear()
 # print(letters)
 
 # Classwork
@@ -31,14 +43,9 @@ list_of_dictionaries = [{id: 2, "name": "Ade"}, {id: 3, "name": "Efe"}]
 #     upper_letter.append(letter.upper())
 # print(upper_letter)
 
-# numbers_to_20 = list(range(20))
-# print(numbers_to_20)
+# Addition of lists
+# print(numbers + letters)
 
-# message = "Hello World"
-# print(list(message))
-
-# zeros = [0] * 100
-# print(zeros)
 
 # letters = ["a", "b", "c", "d", "e", "f", "g", "c", "f", "c"]
 
@@ -48,13 +55,19 @@ list_of_dictionaries = [{id: 2, "name": "Ade"}, {id: 3, "name": "Efe"}]
 # print(letters)
 
 # finding index
+
 # print(letters.index("c"))
-# if "z" in letters:
-#     print(letters.index("z"))
+
+# if "x" in letters:
+#     print(letters.index("x"))
+
+# counting the occurance of a letter in a list
 # print(letters.count("c"))
 
+# letters = ["a", "b", "c", "d", "e", "f", "g", "c", "f", "c"]
+
 # for letter in enumerate(letters):
-#     print(letter[1])
+#     print(letter)
 
 # index_of_c = []
 # for letter in enumerate(letters):
@@ -68,8 +81,6 @@ list_of_dictionaries = [{id: 2, "name": "Ade"}, {id: 3, "name": "Efe"}]
 # # Ai's solution
 # print(list(range(50, 0, -1)))
 
-# Finsing Index
-
 # letters = ["a", "b", "c", "d", "e", "f", "g", "c", "f", "c"]
 
 # Unpacking Lists
@@ -79,3 +90,27 @@ list_of_dictionaries = [{id: 2, "name": "Ade"}, {id: 3, "name": "Efe"}]
 # print(others)
 # print(second_to_last)
 # print(last)
+
+# Seperate "Photo and Synthesis from the word "Photosynthesis
+# word = "Photosynthesis"
+# photo = word[:5]
+# syn = word[5:]
+# print(photo)
+# print(syn)
+
+# Arrange the numbers below in accending order
+# numbers = [23, 24, 4, 55, 67, 88, 9, 43, 2, 2, 1, 1, 90, 77]
+# print(numbers[::-1])
+# print(sorted(numbers, reverse=True))
+# numbers.sort()
+# print(numbers)
+
+# Seperate "efe" from the word
+# numbers_and_letters = ["a", "b", "efe", "z"]
+
+# for value in enumerate(numbers_and_letters):
+#     if value[1] == "efe":
+#         numbers_and_letters.pop(value[0])
+
+
+# print(numbers_and_letters)
