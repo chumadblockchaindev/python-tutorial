@@ -114,3 +114,90 @@ zeros = [0] * 5
 
 
 # print(numbers_and_letters)
+
+# products = [("fish", 100), ("rice", 150), ("meat", 50)]
+
+
+# def sort_product(product):
+#     return ord(product[0][0])
+
+
+# profucts.sort(key=sort_product)
+# print(profucts)
+
+# Lambda Function
+# profucts.sort(key=lambda product: product[1])
+
+# print(products)
+
+# Map Function
+
+# prices = list(map(lambda product: product[1], products))
+
+# print(prices)
+
+# Filter Function
+
+# filtered = []
+# for product in products:
+#     if product[1] > 50:
+#         filtered.append(product)
+
+# print(filtered)
+
+# filtered = list(filter(lambda product: product[1] > 50, products))
+# print(filtered)
+
+# List Comprehension [expression for item in items]
+# prices = [product[1] for product in products]
+# print(prices)
+
+# filtered = [product for product in products if product[1] > 50]
+# print(filtered)
+
+#  Zip Function
+
+# list1 = [1, 2, 3, 4]
+# list2 = [10, 20, 30, 40]
+
+# combined = list(zip("abcd", list1, list2))
+# print(combined)
+
+
+# Classwork
+# 1A. Arrange the names in Alphabetical order
+# 1B. In this list of names remove all "Ades" and "Ebuka"
+
+names = ["Ade", "Esther", "Ade", "Ebuka", "Tosin",
+         "Ade", "Musa", "Umaru", "Ebuka", "Efe"]
+
+# name_to_remove = ['Ade', 'Ebuka']
+# filtered_names = []
+# for index, name in enumerate(names):
+#     if name in name_to_remove:
+#         names.pop(index)
+
+# print(names)
+# filtered_names = []
+
+# for name in names:
+#     if name != 'Ade' and name != "Ebuka":
+#         print(name)
+#         filtered_names.append(name)
+
+# print(filtered_names)
+
+
+# indices_to_remove = [index for index, name in enumerate(names) if name in [
+#     "Ade", "Ebuka"]]
+
+# print(indices_to_remove)
+# for index in sorted(indices_to_remove, reverse=True):
+#     names.pop(index)
+
+
+# names.sort()
+
+# print(names)
+
+# Learn about the Map FUnction, Filter Function, Lamda Function

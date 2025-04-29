@@ -61,23 +61,6 @@ implementing try-except blocks to create robust applications that can gracefully
 
 Class Projects:
 
-Webinar Application
-WhatsApp Marketing tool with Chatbot
-Website Messaging App
-Online Course Web App
-
-
-
-Python Guessing App
-Todo app
-Book Shelf webapp
-Movie webapp
-Ecommerce Website
-Employee Management System
-Courier Website
-Investment Website
-Student Management System
-Online Banking Website
-Hotel Booking System
-Face Login System
-Quiz App
+Webscrapping Application 
+Webinar Application 
+Online Course Web Application
