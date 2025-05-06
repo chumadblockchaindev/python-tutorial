@@ -61,7 +61,27 @@ implementing try-except blocks to create robust applications that can gracefully
 
 Class Projects:
 
-E-commerce Website (using jumia data) 
+A program to automate sending messages to email leads or whatsapp from excel
+Webinar Application to convert the leads 
 
-Webinar Application 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+E-commerce Website (using jumia data) 
 Online Course Web Application

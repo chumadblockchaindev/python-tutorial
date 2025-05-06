@@ -9,21 +9,15 @@ fruits = ['apples', 'bananas', 'oranges', 'mangoes', 'garri', "rice", 'beans']
 # For Examples the above should return "apples, bananas, oranges, and mangoes"
 
 # Solution
-# sentence = [str(item) for item in items]
-# return ", ".join(sentence)
-
-# new_list = []
 
 
-# def getString(items):
-#     for item in items:
-#         new_list.append(f"{item} ,")
-
-#     new_list.insert(len(items) - 1, "and")
-#     return " ".join(new_list)
+def getString(items):
+    items.insert(len(items) - 1, "and")
+    print(items)
+    return ", ".join(items)
 
 
-# print(getString(fruits))
+print(getString(fruits))
 
 
 # Tuples
@@ -188,15 +182,15 @@ items = {'eggs': 20, 'fish': 15, 'rice': 2, 'milk': 12}
 sentence = "The King of the world is Jesus and he is the creator of the universe"
 # In the sentence above get the most number of letter occurent
 
-count = {}
+# count = {}
 
-for char in sentence:
-    if char not in count:
-        count[char] = 1
-    else:
-        count[char] += 1
-del count[' ']
-pprint(count, width=1)
+# for char in sentence:
+#     if char not in count:
+#         count[char] = 1
+#     else:
+#         count[char] += 1
+# del count[' ']
+# pprint(count, width=1)
 
 # def getvalue(item):
 #     return item[1]
