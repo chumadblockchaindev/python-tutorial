@@ -156,9 +156,7 @@ lion.describe_animal()
 print("\nPrinting properties of individual animal")
 bird.bird_property()
 fish.fish_property()
-lion.lion_property()
-
-
+lion.lion_proper
 # Assignment:
 # Create an Car class and give it generic properties of cars
 # Create a method inside the car class to print out the description of the car
