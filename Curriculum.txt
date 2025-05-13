@@ -62,7 +62,7 @@ implementing try-except blocks to create robust applications that can gracefully
 Class Projects:
 
 A program to automate sending messages to email leads or whatsapp from excel
-Webinar Application to convert the leads 
+Webinar Application with countdown timer to convert the leads 
 
 
 
