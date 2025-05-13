@@ -51,33 +51,118 @@
 # Use that instance to print out the name of the student and use the instance to call the methods you created in the Student class
 
 
-class Student:
-    """A class to model the students we have at Coriftech"""
+# class Student:
+#     """A class to model the students we have at Coriftech"""
 
-    def __init__(self, full_name, age, gender):
-        """This init function is called first on every run"""
-        self.full_name = full_name
-        self.age = age
-        self.gender = gender
-        self.course = ["Graphics", "Software", "Data Analysis"]
+#     # A constructor
+#     def __init__(self, full_name, age, gender):
+#         """This init function is called first on every run"""
+#         self.full_name = full_name
+#         self.age = age
+#         self.gender = gender
+#         self.course = ["Graphics", "Software", "Data Analysis"]
 
-    def describe_student(self):
-        """We print out the infor of the students"""
-        print(f"Name: {self.full_name}, Age: {self.age}, Gender: {self.gender}")
+#     def describe_student(self):
+#         """We print out the infor of the students"""
+#         print(f"Name: {self.full_name}, Age: {self.age}, Gender: {self.gender}")
 
-    def get_courses(self):
-        """We are getting the courses the students are offering"""
-        print(", ".join(self.course))
+#     def get_courses(self):
+#         """We are getting the courses the students are offering"""
+#         print(", ".join(self.course))
 
-    def add_course(self, *new_course):
-        """We are adding to the courses the students are offering"""
-        self.course += list(new_course)
+#     def add_course(self, *new_course):
+#         """We are adding to the courses the students are offering"""
+#         self.course += list(new_course)
+
+#     # Assignment: Remove more than one course from the self.course list
+#     def remove_course(self, *course_name):
+#         if course_name in self.course:
+#             self.course.remove(course_name.title())
 
 
-student1 = Student("Emma EfeOgene", 27, "Male")
+# student1 = Student("Emma EfeOgene", 27, "Male")
+# student2 = Student("Efe", 23, "Male")
 
-student1.describe_student()
-print(student1.full_name)
-student1.get_courses()
-student1.add_course("Data Processing", "Visual Basic", "Microsoft Powerpoint")
-student1.get_courses()
+# student1.get_courses()
+# student1.add_course("Msword", "Excel", "Powerpoint")
+# student1.get_courses()
+# student1.remove_course("Msword", "Excel")
+# student1.get_courses()
+
+class Animals:
+    # Doc String
+    """A class to hold the generic property of Animals"""
+    # Class Attribute
+    breathe = "All animals can breathe"
+
+    # Constructor: Runs immediately the class is run
+    def __init__(self, name):
+        """A constructor to initialize the name of the animal"""
+        # Instant Attribute
+        self.name = name
+
+    def describe_animal(self):
+        """A method to describe the animal"""
+        print(f"This animal is a {self.name}")
+
+
+class Bird(Animals):
+    """A class to hold properties of bird"""
+
+    def __init__(self, name):
+        super().__init__(name)
+        self.fly = "fly"
+
+    def bird_property(self):
+        print(f"Only {self.name} {self.fly}")
+
+
+class Fish(Animals):
+    """A class to hold properties of fish"""
+
+    def __init__(self, name):
+        super().__init__(name)
+        self.swim = "swim"
+
+    def fish_property(self):
+        print(f"Only {self.name} {self.swim}")
+
+
+class Lion(Animals):
+    """A class to hold properties of lions"""
+
+    def __init__(self, name):
+        super().__init__(name)
+        self.roar = "roar"
+
+    def lion_property(self):
+        print(f"Only {self.name} {self.roar}")
+
+
+bird = Bird("Bird")
+fish = Fish("Fish")
+lion = Lion("Lion")
+
+print("Printing the names of all the animals")
+print(bird.name)
+print(fish.name)
+print(lion.name)
+
+print("\nPrinting properties of all the animals")
+bird.describe_animal()
+fish.describe_animal()
+lion.describe_animal()
+
+print("\nPrinting properties of individual animal")
+bird.bird_property()
+fish.fish_property()
+lion.lion_property()
+
+
+# Assignment:
+# Create an Car class and give it generic properties of cars
+# Create a method inside the car class to print out the description of the car
+# Create two new classes for electric cars and petrol cars and make them inherit from Car properties
+# Create specific functions for the individual classes
+# Create an instance of the electric car and the petrol car and call the describe car method with the two instances
+# Call the specific methods for the electric car and petrol car

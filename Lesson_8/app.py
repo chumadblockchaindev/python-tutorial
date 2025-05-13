@@ -79,7 +79,7 @@ sentence = "Ade is a good \n boy and he helps \n he's mom out \n in the kitchen"
 # printPicnic(picnicItems, 20, 6)
 
 # Assignment
-# Arrange the phone numbers in the file nameed phonenumbers in one column and put it in a new folder
+# Arrange the phone numbers in the file nameed phonenumbers in one column and put it in a new file
 
 # Methods for removing whitespaces strip(), rstrip(), lstrip()
 
