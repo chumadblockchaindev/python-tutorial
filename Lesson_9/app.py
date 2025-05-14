@@ -75,92 +75,166 @@
 #         self.course += list(new_course)
 
 #     # Assignment: Remove more than one course from the self.course list
-#     def remove_course(self, *course_name):
-#         if course_name in self.course:
-#             self.course.remove(course_name.title())
+#     def remove_course(self, course_name):
+#         first, second = course_name
+#         self.course.remove(first)
+#         self.course.remove(second)
 
 
 # student1 = Student("Emma EfeOgene", 27, "Male")
-# student2 = Student("Efe", 23, "Male")
+# # student2 = Student("Efe", 23, "Male")
 
-# student1.get_courses()
+# # student1.get_courses()
 # student1.add_course("Msword", "Excel", "Powerpoint")
 # student1.get_courses()
-# student1.remove_course("Msword", "Excel")
+# student1.remove_course(["Msword", "Excel"])
 # student1.get_courses()
 
-class Animals:
-    # Doc String
-    """A class to hold the generic property of Animals"""
-    # Class Attribute
-    breathe = "All animals can breathe"
+# class Animals:
+#     # Doc String
+#     """A class to hold the generic property of Animals"""
+#     # Class Attribute
+#     breathe = "All animals can breathe"
 
-    # Constructor: Runs immediately the class is run
-    def __init__(self, name):
-        """A constructor to initialize the name of the animal"""
-        # Instant Attribute
-        self.name = name
+#     # Constructor: Runs immediately the class is run
+#     def __init__(self, name):
+#         """A constructor to initialize the name of the animal"""
+#         # Instant Attribute
+#         self.name = name
 
-    def describe_animal(self):
-        """A method to describe the animal"""
-        print(f"This animal is a {self.name}")
-
-
-class Bird(Animals):
-    """A class to hold properties of bird"""
-
-    def __init__(self, name):
-        super().__init__(name)
-        self.fly = "fly"
-
-    def bird_property(self):
-        print(f"Only {self.name} {self.fly}")
+#     def describe_animal(self):
+#         """A method to describe the animal"""
+#         print(f"This animal is a {self.name}")
 
 
-class Fish(Animals):
-    """A class to hold properties of fish"""
+# class Bird(Animals):
+#     """A class to hold properties of bird"""
 
-    def __init__(self, name):
-        super().__init__(name)
-        self.swim = "swim"
+#     def __init__(self, name):
+#         super().__init__(name)
+#         self.fly = "fly"
 
-    def fish_property(self):
-        print(f"Only {self.name} {self.swim}")
-
-
-class Lion(Animals):
-    """A class to hold properties of lions"""
-
-    def __init__(self, name):
-        super().__init__(name)
-        self.roar = "roar"
-
-    def lion_property(self):
-        print(f"Only {self.name} {self.roar}")
+#     def bird_property(self):
+#         print(f"Only {self.name} {self.fly}")
 
 
-bird = Bird("Bird")
-fish = Fish("Fish")
-lion = Lion("Lion")
+# class Fish(Animals):
+#     """A class to hold properties of fish"""
 
-print("Printing the names of all the animals")
-print(bird.name)
-print(fish.name)
-print(lion.name)
+#     def __init__(self, name):
+#         super().__init__(name)
+#         self.swim = "swim"
 
-print("\nPrinting properties of all the animals")
-bird.describe_animal()
-fish.describe_animal()
-lion.describe_animal()
+#     def fish_property(self):
+#         print(f"Only {self.name} {self.swim}")
 
-print("\nPrinting properties of individual animal")
-bird.bird_property()
-fish.fish_property()
-lion.lion_proper
+
+# class Lion(Animals):
+#     """A class to hold properties of lions"""
+
+#     def __init__(self, name):
+#         super().__init__(name)
+#         self.roar = "roar"
+
+#     def lion_property(self):
+#         print(f"Only {self.name} {self.roar}")
+
+
+# bird = Bird("Bird")
+# fish = Fish("Fish")
+# lion = Lion("Lion")
+
+# print("Printing the names of all the animals")
+# print(bird.name)
+# print(fish.name)
+# print(lion.name)
+
+# print("\nPrinting properties of all the animals")
+# bird.describe_animal()
+# fish.describe_animal()
+# lion.describe_animal()
+
+# print("\nPrinting properties of individual animal")
+# bird.bird_property()
+# fish.fish_property()
+# lion.lion_property()
+
 # Assignment:
-# Create an Car class and give it generic properties of cars
-# Create a method inside the car class to print out the description of the car
-# Create two new classes for electric cars and petrol cars and make them inherit from Car properties
+# Create an Car class and give it generic properties of cars ****
+# Create a method inside the car class to print out the description of the car***
+# Create two new classes for electric cars and petrol cars and make them inherit from Car properties *****
 # Create specific functions for the individual classes
 # Create an instance of the electric car and the petrol car and call the describe car method with the two instances
 # Call the specific methods for the electric car and petrol car
+
+# Abstraction
+# from abc import ABC, abstractmethod
+
+# # Parent or Base class
+
+
+# class Car(ABC):
+#     """Car class representing a Car"""
+
+#     def __init__(self, brand, year, model):
+#         self.brand = brand
+#         self.year = year
+#         self.model = model
+#         self.millage = 0
+
+#     def car_description(self):
+#         print(
+#             f"Car Name: {self.brand}, Car Year: {self.year}, Car Model: {self.model}")
+
+#     @abstractmethod
+#     def drive_car(self, distance):
+#         if distance < 0:
+#             print("Distance cannot be negative")
+#         self.millage += distance
+
+# # Child class or sub class
+
+
+# class ElectricCar(Car):
+#     """Electric car model"""
+
+#     def __init__(self, brand, year, model):
+#         super().__init__(brand, year, model)
+#         self.battery_capacity = 70
+
+#     def get_battery_capacity(self):
+#         return self.battery_capacity
+
+#     def drive_car(self, distance):
+#         return super().drive_car(distance)
+
+
+# class PetrolCar(Car):
+#     """Petrol car model"""
+
+#     def __init__(self, brand, year, model):
+#         super().__init__(brand, year, model)
+#         self.fuel_guage = {70: "Full", 50: "Half", 30: "Low", 10: "Empty"}
+#         self.fuel = 100
+
+#     def get_fuel_guage(self):
+#         value = list(
+#             {guage for guage in self.fuel_guage if guage <= self.fuel})
+#         value.sort(reverse=True)
+#         return self.fuel_guage.get(value[0], "")
+
+#     def drive_car(self, distance):
+#         self.fuel -= distance/2
+#         return super().drive_car(distance)
+
+
+# lexus = PetrolCar("Toyota", 2026, "GX470")
+# # tesla = ElectricCar("Tesla", 2025, "TeslaX")
+
+# lexus.car_description()
+# lexus.drive_car(100)
+# lexus.drive_car(25)
+# lexus.drive_car(20)
+# print(lexus.fuel)
+# print(lexus.get_fuel_guage())
+# print(lexus.millage)
