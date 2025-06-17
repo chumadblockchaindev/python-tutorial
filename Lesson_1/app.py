@@ -1,22 +1,22 @@
 # First python tutorial
 
-from math import sqrt
-print("Hello, World!")
+# from math import sqrt
+# print("Hello, World!")
 
 # Variables and Assignment Operators
 
 # from math import sqrt
-name = "John"
-age = 30
-income = 50000.50
-message = "Hello World"
-is_food_availabe = True
+# name = "John"
+# age = 30
+# income = 50000.50
+# message = "Hello World"
+# is_food_availabe = True
 
-print(name)
-print(age)
-print(income)
-print(message)
-print(is_food_availabe)
+# print(name)
+# print(age)
+# print(income)
+# print(message)
+# print(is_food_availabe)
 # The variable is 'name' in the above code
 
 # Commenting in python
@@ -25,19 +25,26 @@ print(is_food_availabe)
 
 # Maths Operators in Python
 
-print(5+3)
-print(6-8)
-print(9*4)
-print(6/2)
-print(10 % 7)
+# print(5+3)
+# print(6-8)
+# print(9*4)
+# print(6/2)
+# print(10 % 7)
+
+# number_one = 67
+# number_two = 47
+# add_result = number_one + number_two
+
+
+# Comparism oprerators in Python
+
 print(2 > 3)
 print(2 < 3)
 print(2 == 3)
 print(2 != 3)
+print(2 >= 3)
+print(2 <= 3)
 
-number_one = 67
-number_two = 47
-add_result = number_one + number_two
 
 # print("The result of adding", number_one,
 #       " and ",  number_two, " is ", add_result)
@@ -79,11 +86,11 @@ add_result = number_one + number_two
 
 # Input and Output in Python
 
-num_one = input("Enter the first number: ")
-num_two = input("Enter the second number: ")
+# num_one = input("Enter the first number: ")
+# num_two = input("Enter the second number: ")
 
-result = int(num_one) + int(num_two)
-# print("The result of adding", num_one, "and", num_two, "is", result)
+# result = int(num_one) + int(num_two)
+# # print("The result of adding", num_one, "and", num_two, "is", result)
 
-# Formatting Output in Python
-print(f"The result of adding {num_one} and {num_two} is {result}")
+# # Formatting Output in Python
+# print(f"The result of adding {num_one} and {num_two} is {result}")
