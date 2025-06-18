@@ -60,14 +60,55 @@ message = "Hello World!"
 # for variable in sequence:
 # Do something with the variable
 
-for number in numbers:
-    print(f"Number: {number}")
+# for number in numbers:
+#     print(f"Number: {number}")
 
-for char in message:
-    print(f"Character: {char}")
+# for char in message:
+#     print(f"Character: {char}")
+
+
+# message = "Python Programming"
+
+# for char in message:
+#     if char == "P":
+#         print(char)
+
+# numbers = range(1, 21)
+
+# for number in numbers:
+#     if number % 2 == 0:
+#         print(f"Even number: {number}")
+
+
+# numbers = range(1, 21, 2)
+
+# for number in numbers:
+#     print(number+1)
 
 # A for loop is used to iterrate over a sequence (like a list, tuple, or string).
 
 # Assignment
 
 # Study while Loop and Give me Examples while loop and infinite loop
+
+# While Loop Example
+
+# while condition:
+#     # Do something
+
+# count = 0
+
+# while count < 10:
+#     print(f"Count is: {count}")
+#     count += 1
+
+
+# Infinite Loop Example
+
+while True:
+    user_input = input("Type 'exit' to stop the loop: ")
+    if user_input.lower() == "exit":
+        print("Exiting the loop.")
+        break
+    else:
+        print(f"You typed: {user_input}")

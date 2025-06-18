@@ -27,6 +27,8 @@ Defining functions
 
 Arguments & return values
 
+Default Arguments
+
 *args and **kwargs
 
 Lambda functions
