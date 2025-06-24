@@ -31,8 +31,6 @@ Default Arguments
 
 *args and **kwargs
 
-Lambda functions
-
 Decorators
 
 
@@ -41,7 +39,7 @@ Week 5:
 Basic Data Structures: Explore the fundamental data structures used in python, 
 such as lists and tuples, dictionary and sets to efficiently manage data in your projects.
 Explore the fundamental more complex data structures, manipulating data structures.
-Lists & list comprehensions etc...Solve examples relating to data structure
+Lists & list comprehensions etc...Solve examples relating to data structure, Lambda functions
 
 Week 6: Error Handling
 
